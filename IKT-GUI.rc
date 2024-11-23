@@ -1,0 +1,13 @@
+#include "resource.h"  // Include this to define resource IDs
+
+IDD_QUERY_DIALOG DIALOGEX 0, 0, 200, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Two Integers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "First Integer:",IDC_STATIC,10,10,80,10
+    EDITTEXT        IDC_EDIT_INT1,10,30,80,14,ES_AUTOHSCROLL
+    LTEXT           "Second Integer:",IDC_STATIC,10,50,80,10
+    EDITTEXT        IDC_EDIT_INT2,10,70,80,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,100,90,50,14
+END
