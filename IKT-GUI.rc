@@ -1,13 +1,133 @@
-#include "resource.h"  // Include this to define resource IDs
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
 
-IDD_QUERY_DIALOG DIALOGEX 0, 0, 200, 120
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Enter Two Integers"
-FONT 8, "MS Sans Serif"
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QUERY_DIALOG DIALOGEX 0, 0, 185, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter size"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
-    LTEXT           "First Integer:",IDC_STATIC,10,10,80,10
+    LTEXT           "Width in pixels",IDC_STATIC,10,10,80,10
     EDITTEXT        IDC_EDIT_INT1,10,30,80,14,ES_AUTOHSCROLL
-    LTEXT           "Second Integer:",IDC_STATIC,10,50,80,10
-    EDITTEXT        IDC_EDIT_INT2,10,70,80,14,ES_AUTOHSCROLL
-    PUSHBUTTON      "OK",IDOK,100,90,50,14
+    LTEXT           "Height in pixels",IDC_STATIC,100,10,80,10
+    EDITTEXT        IDC_EDIT_INT2,99,30,80,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,67,57,50,14
 END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_QUERY_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_QUERY_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "CompanyName", "F100cTomas"
+            VALUE "FileDescription", "Allows user to view .txt files as images"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "IKT-GUI.exe"
+            VALUE "LegalCopyright", "MIT License (C) 2024 F100cTomas"
+            VALUE "OriginalFilename", "IKT-GUI.exe"
+            VALUE "ProductName", "Image Viewer"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
