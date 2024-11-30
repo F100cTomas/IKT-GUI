@@ -694,6 +694,7 @@ static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM l
             if (menuredraw) DrawMenuBar(hwnd);
             return 0;
         }
+        SetStretchBltMode(hdc, HALFTONE);
         HDC image = CreateCompatibleDC(hdc);
         HGDIOBJ old = SelectObject(image, imagebitmap);
         if (windowwidth * height > windowheight * width ) {
