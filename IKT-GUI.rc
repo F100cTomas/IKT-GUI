@@ -1,5 +1,6 @@
 // Microsoft Visual C++ generated resource script.
 //
+#include <windows.h>
 #include "resource.h"
 /////////////////////////////////////////////////////////////////////////////
 // English (United Kingdom) resources
@@ -19,10 +20,12 @@ CAPTION "Enter size"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     LTEXT           "Width in pixels",IDC_STATIC,10,10,80,10
-    EDITTEXT        IDC_EDIT_INT1,10,30,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INT1,7,21,80,14,ES_AUTOHSCROLL
     LTEXT           "Height in pixels",IDC_STATIC,100,10,80,10
-    EDITTEXT        IDC_EDIT_INT2,99,30,80,14,ES_AUTOHSCROLL
-    PUSHBUTTON      "OK",IDOK,67,57,50,14
+    EDITTEXT        IDC_EDIT_INT2,98,19,80,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,99,52,50,14
+    EDITTEXT        IDC_EDIT_INT3,8,52,80,14,ES_AUTOHSCROLL
+    LTEXT           "Color model",IDC_STATIC,9,39,80,10
 END
 
 
@@ -61,7 +64,7 @@ GUIDELINES DESIGNINFO
 BEGIN
     IDD_QUERY_DIALOG, DIALOG
     BEGIN
-        BOTTOMMARGIN, 44
+        BOTTOMMARGIN, 66
     END
 END
 #endif    // APSTUDIO_INVOKED
