@@ -87,8 +87,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -105,12 +105,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "F100cTomas"
             VALUE "FileDescription", "Allows user to view .txt files as images"
-            VALUE "FileVersion", "1.0.0.1"
+            VALUE "FileVersion", "1.1.0.1"
             VALUE "InternalName", "IKT-GUI.exe"
             VALUE "LegalCopyright", "MIT License (C) 2024 F100cTomas"
             VALUE "OriginalFilename", "IKT-GUI.exe"
             VALUE "ProductName", "Image Viewer"
-            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "ProductVersion", "1.1.0.1"
         END
     END
     BLOCK "VarFileInfo"
