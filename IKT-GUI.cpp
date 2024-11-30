@@ -563,7 +563,7 @@ static void writebinfile(HANDLE file) {
     // Get the file size in pixels
     size_t fileSize = width * height;
     // The image is parsed and copied to a new buffer
-    char* data = new char[fileSize * 32];
+    char* data = new char[fileSize * 4];
     {
         char* current = data;
         for (size_t i = 0; i < fileSize; ++i) {
@@ -579,7 +579,7 @@ static void writebinfile(HANDLE file) {
         OVERLAPPED overlapped;
         ZeroMemory(&overlapped, sizeof(OVERLAPPED));
         overlapped.hEvent = CreateEventExW(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE | SYNCHRONIZE);
-        (void)WriteFileEx(file, data, fileSize * 32, &overlapped, writefileexCallback);
+        (void)WriteFileEx(file, data, fileSize * 4, &overlapped, writefileexCallback);
         (void)WaitForSingleObjectEx(overlapped.hEvent, 1000, TRUE);
         delete[] data;
     }
