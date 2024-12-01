@@ -794,12 +794,14 @@
 #define LANG_DIVEHI                     0x65
 #define IDD_QUERY_DIALOG                101
 #define VK_NUMPAD6                      0x66
+#define IDD_QUERY_DIALOG1               102
 #define VK_NUMPAD7                      0x67
 #define LANG_FULAH                      0x67
 #define LANG_PULAR                      0x67
 #define IDI_ICON1                       103
 #define VK_NUMPAD8                      0x68
 #define LANG_HAUSA                      0x68
+#define IDD_COLORMODELDIALOG            104
 #define VK_NUMPAD9                      0x69
 #define VK_MULTIPLY                     0x6A
 #define LANG_YORUBA                     0x6a
@@ -1256,6 +1258,8 @@
 #define IDC_EDIT_INT1                   1001
 #define IDC_EDIT_INT2                   1002
 #define IDC_EDIT_INT3                   1003
+#define IDC_FRAME2                      1008
+#define IDC_EDIT_CM                     1010
 #define CF_GDIOBJLAST                   0x03FF
 #define _WIN32_WINNT_NT4                0x0400
 #define _WIN32_IE_IE40                  0x0400
@@ -1505,6 +1509,7 @@
 #define IDH_NO_HELP                     28440
 #define IDH_MISSING_CONTEXT             28441
 #define IDH_GENERIC_HELP_BUTTON         28442
+#define IDD_COLORMODEL_DIALOG           28442
 #define IDH_OK                          28443
 #define IDH_CANCEL                      28444
 #define IDH_HELP                        28445
@@ -1615,9 +1620,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        104
+#define _APS_NEXT_RESOURCE_VALUE        107
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

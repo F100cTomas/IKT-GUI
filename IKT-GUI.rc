@@ -28,6 +28,16 @@ BEGIN
     LTEXT           "Color model",IDC_STATIC,9,39,80,10
 END
 
+IDD_COLORMODEL_DIALOG DIALOGEX 0, 0, 130, 24
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "enter Color model"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,80,10,50,14
+    EDITTEXT        IDC_EDIT_CM,0,10,80,14,ES_AUTOHSCROLL
+    LTEXT           "Color model",-1,0,0,80,10
+END
+
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -66,6 +76,10 @@ BEGIN
     BEGIN
         BOTTOMMARGIN, 66
     END
+
+    IDD_COLORMODEL_DIALOG, DIALOG
+    BEGIN
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -76,6 +90,11 @@ END
 //
 
 IDD_QUERY_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_COLORMODEL_DIALOG AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
